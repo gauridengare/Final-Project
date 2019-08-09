@@ -1,0 +1,38 @@
+<html> 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="app.css"> 
+    <body>
+        <h1>Weather App using AngularJS</h1>
+
+        <div ng-app = "App" ng-controller = "WeatherCtrl" id="MainBlock">
+
+            <div id="temp">
+                <h1> {{temp}} <strong>&#8451;</strong></h1>
+                <h1><strong>{{city}} {{country}}</strong></h1>
+            </div>
+
+            <div id="data">
+                <p>Min. Temperature: {{min}} <strong>&#8451;</strong></p>
+                <p>Max. Temperature: {{max}} <strong>&#8451;</strong></p>
+                <p>wind-speed: {{wind}} km/h</p>
+                <p>humidity: {{hum}} %</p>
+                <p>Pressure: {{press}} Pa</p>
+                <p>{{code}}</p>
+                <img ng-src="{{myImg}}" height="100" width="100">
+            </div>
+
+            <div id="search">
+                <input ng-model = "cityName" style="width: 30%; float:inherit" input type="text" ng-value="message"/>
+                <br>
+            </div>
+
+            <button ng-click = "output()" style="width: 20%; float:inherit">See Weather</button>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+        <script type="text/javascript" src = "app.js"></script>
+    </body>
+</html>

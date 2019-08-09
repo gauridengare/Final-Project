@@ -1,0 +1,68 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("blur-cars-dew-125510.jpg") no-repeat center center fixed; 
+    padding-top: 10%;
+    text-align: center;
+}
+
+#MainBlock {
+    border-left-style: ridge;
+    border-left-color: coral;
+    border-right-style: ridge;
+    border-right-color: coral;
+    margin: 25px 50px 25px 400px;
+    background-color: rgba(225, 200, 200, 1);
+    display: block;
+    height: 85%;
+    width: 50%;
+    top:-50px;
+}
+#temp {
+    overflow: hidden;
+    font-size: 400px;
+    position: relative;
+    left: -200px;
+    bottom: -120px;
+}
+#data {
+    overflow: hidden;
+    font-size: 25px;
+    position: relative;
+    right: -150px;
+    top: -50px;
+}
+
+#search {
+    display: block;
+    background-color: white;
+    min-height: 50px;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    padding-left:10px;
+}
+
+button {
+    color: black;
+    display: block;
+    background: yellowgreen;
+    border: 2px solid white;
+    float: right;
+    width: 30%;
+    min-height: 50px;
+}
+
+button:hover {
+    opacity: 0.5;
+    color:#4341f4;
+    border-color:#ebf441;
+}
+
+input {
+    display: block;
+    float: left;
+    background: transparent;
+    border-style: none;
+    min-height: 55px;
+    width: 72%;  
+}
